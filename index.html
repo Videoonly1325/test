@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <button id="countButton">ボタンを押してください</button>
+    <div id="countDisplay"></div>
+
+    <script>
+        let count = 0;
+
+        function incrementCount() {
+            
+            count++;
+
+            document.getElementById("countDisplay").innerText = "ボタンが " + count + " 回押されました。";
+        }
+
+        document.getElementById("countButton").addEventListener("click", incrementCount);
+    </script>
+</body>
+</html>
